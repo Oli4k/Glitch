@@ -1,0 +1,54 @@
+body {
+    font-family: 'Palanquin', sans-serif;
+    font-size: 0.9em;
+    zoom: 1;
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */  
+    background-size: cover;
+    background: url('') no-repeat center center fixed;
+}
+
+#content-container {
+    top: 100%;
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    background-color: #ffffff;
+}
+
+.content-item {
+    max-width: 620px;
+    margin: auto;
+}
+
+#info-header {
+    top: 0px;
+    position: fixed;
+}
+
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#loader > img {
+  z-index: -10;
+  display: flex;
+  position: absolute;
+  align-self: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50%;
+  width: 42px;
+  height: 32px;
+}
